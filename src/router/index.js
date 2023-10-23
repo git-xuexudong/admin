@@ -100,6 +100,33 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/limits',
+    component: Layout,
+    redirect: '/limits/personnel',
+    name: '权限管理',
+    meta: { title: '权限管理', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'personnel',
+        name: 'Personnel',
+        component: () => import('@/views/limits/personnel/index'),
+        meta: { title: '人员管理', icon: 'table' }
+      },
+      {
+        path: 'role',
+        name: 'Role',
+        component: () => import('@/views/limits/role/index'),
+        meta: { title: '角色管理', icon: 'tree' }
+      },
+      {
+        path: 'device',
+        name: 'Device',
+        component: () => import('@/views/limits/device/index'),
+        meta: { title: '设备管理', icon: 'tree' }
+      }
+    ]
+  },
   // 系统管理
   {
     path: '/systemManagement',
