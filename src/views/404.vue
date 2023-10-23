@@ -91,7 +91,9 @@ export default {
         0% {
           top: 17px;
           left: 220px;
+          // opacity: 0;
           opacity: 0;
+
         }
         20% {
           top: 33px;
