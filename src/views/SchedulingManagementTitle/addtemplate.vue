@@ -120,6 +120,7 @@ export default {
   color: #333;
   text-align: left;
   padding: 10px;
+  // padding: 20px;
 }
 .el-main {
   background-color: #e9eef3;
