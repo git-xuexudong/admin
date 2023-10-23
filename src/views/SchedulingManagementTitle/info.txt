@@ -1,0 +1,4 @@
+JobQuery : 作业查询
+dispatchingLog：调度日志
+SchedulingManagement： 调度管理
+TriggerManagement ：触发器管理
